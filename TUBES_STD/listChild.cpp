@@ -6,7 +6,7 @@ void createListChild(listChild& L) {
 
 addressChild createElmChild(infotypeChild in) {
 	addressChild P = new child;
-	P->info = x;
+	P->info = A;
 	P->next = NULL;
 	return P;
 }
@@ -24,7 +24,7 @@ void insertFirstChild(listChild& L, addressChild P) {
 
 void insertAfterChild(listChild& L, addressChild Prec, addressChild P) {
 	P->next = Prec->next;
-	Prev->next = P;
+	Prec->next = P;
 }
 
 void insertLastChild(listChild& L, addressChild P) {
@@ -116,10 +116,10 @@ void deleteSpecificChild(listChild& L, string A) {
 	cout << endl;
 }
 
-address_child findElmChild(listChild& L, string A) {
+addressChild findElmChild(listChild& L, string A) {
 	addressChild P = L.first;
 	while (P != NULL && P->info.namaMamin != A && P->info.IDMamin != A) {
-		p = P->next;
+		P = P->next;
 	}
 	return P;
 }
