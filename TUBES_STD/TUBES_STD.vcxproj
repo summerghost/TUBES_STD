@@ -153,7 +153,7 @@
     <ClCompile Include="listRelasi.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\REPO\Warteg_Tubes-STD\Tubes Files\listParrent.h" />
+    <ClInclude Include="listParrent.h" />
     <ClInclude Include="listRelasi.h" />
     <ClInclude Include="listChild.h" />
   </ItemGroup>

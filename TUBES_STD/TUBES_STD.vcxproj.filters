@@ -18,10 +18,10 @@
     <ClInclude Include="listChild.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\REPO\Warteg_Tubes-STD\Tubes Files\listParrent.h">
+    <ClInclude Include="listRelasi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="listRelasi.h">
+    <ClInclude Include="listParrent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

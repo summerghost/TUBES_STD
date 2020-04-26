@@ -38,7 +38,7 @@ void deleteSpecificChild(listChild& L, string A);
 addressChild findElmChild(listChild& L, string A);
 void printInfoChild(listChild L);
 
-void inputDataMamin(listChild L, infotypeChild& in);
+void inputDataMamin(listChild L, infotypeChild& A);
 
 string generatorIDChild();
 void deallocateChild(addressChild& P);

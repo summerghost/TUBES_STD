@@ -4,7 +4,7 @@ void createListChild(listChild& L) {
 	L.first = NULL;
 }
 
-addressChild createElmChild(infotypeChild in) {
+addressChild createElmChild(infotypeChild A) {
 	addressChild P = new child;
 	P->info = A;
 	P->next = NULL;
@@ -38,20 +38,20 @@ void insertLastChild(listChild& L, addressChild P) {
 }
 
 void insertSortedChild(listChild& L, infotypeChild A) {
-	if (L.first != NULL) {
-		if (findElmChild(L, in.namaMamin) == NULL) {
-			if (in.namaTahanan > L.first->info.namaMamin) {
-				insertFirstChild(L, CreateElmChild(in));
+	if ( L.first != NULL ) {
+		if ( findElmChild(L, A.namaMamin) == NULL) {
+			if (A.namaMamin > L.first->info.namaMamin) {
+				insertFirstChild(L, createElmChild(A));
 			}
-			else if (in.namaMamin < L.last->info.namaMamin) {
-				insertLastChild(L, createElmChild(in));
+			else if (A.namaMamin < L.last->info.namaMamin) {
+				insertLastChild(L, createElmChild(A));
 			}
 			else {
 				addressChild P = L.first;
-				while (P != NULL && in.namaMamin > P->info.namaMamin) {
+				while (P != NULL && A.namaMamin > P->info.namaMamin) {
 					P = P->next;
 				}
-				insertAfterChild(L, P, createElmChild(in));
+				insertAfterChild(L, P, createElmChild(A));
 			}
 		}
 		else {
@@ -59,7 +59,7 @@ void insertSortedChild(listChild& L, infotypeChild A) {
 		}
 	}
 	else {
-		insertFirstChild(L, createElmChild(in));
+		insertFirstChild(L, createElmChild(A));
 	}
 }
 
@@ -101,7 +101,7 @@ void deleteSpecificChild(listChild& L, string A) {
 		}
 		else {
 			P = L.first;
-			addressChild Q;
+			addressChild Q{};
 			while (P->info.namaMamin != A) {
 				Q = P;
 				P = P->next;
@@ -136,24 +136,24 @@ void printInfoChild(listChild L) {
 	cout << endl;
 }
 
-void inputDataMamin(listChild L, infotypeChild& in) {
+void inputDataMamin(listChild L, infotypeChild& A) {
 	cout << "Tambah menu makan/minum: ";
 	cin.get();
-	getline(cin, in.namaMamin);
-	while (findElmChild(L, in.namaMamin) != NULL) {
+	getline(cin, A.namaMamin);
+	while (findElmChild(L, A.namaMamin) != NULL) {
 		cout << "Makanan/minuman sudah ada. Input kembali." << endl;
 		cout << "Tambah menu makan/minum: ";
 		cin.get();
-		getline(cin, in.namaMamin);
+		getline(cin, A.namaMamin);
 	}
 	cout << "Harga makanan: ";
-	cin >> in.hargaMamin;
-	in.IDMamin = generatorIDChild();
-	while (findElmChild(L, in.IDMamin) != NULL) {
-		in.IDMamin = generatorIDChild();
+	cin >> A.hargaMamin;
+	A.IDMamin = generatorIDChild();
+	while (findElmChild(L, A.IDMamin) != NULL) {
+		A.IDMamin = generatorIDChild();
 	}
-	cout << "ID makanan/minuman: " << in.IDMamin;
-	in.countMamin = 0;
+	cout << "ID makanan/minuman: " << A.IDMamin;
+	A.countMamin = 0;
 }
 
 string generatorIDChild() {
