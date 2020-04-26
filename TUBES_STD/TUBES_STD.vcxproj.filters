@@ -15,7 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TUBES_STD.cpp">
+    <ClInclude Include="listChild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\REPO\Warteg_Tubes-STD\Tubes Files\listParrent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="listRelasi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listChild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listParrent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listRelasi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -147,7 +147,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TUBES_STD.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="listChild.cpp" />
+    <ClCompile Include="listParrent.cpp" />
+    <ClCompile Include="listRelasi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\REPO\Warteg_Tubes-STD\Tubes Files\listParrent.h" />
+    <ClInclude Include="listRelasi.h" />
+    <ClInclude Include="listChild.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
