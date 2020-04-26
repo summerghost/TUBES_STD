@@ -101,7 +101,7 @@ void deleteSpecificChild(listChild& L, string A) {
 		}
 		else {
 			P = L.first;
-			addressChild Q{};
+			addressChild Q = 0;
 			while (P->info.namaMamin != A) {
 				Q = P;
 				P = P->next;
