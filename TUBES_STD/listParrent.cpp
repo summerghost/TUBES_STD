@@ -158,3 +158,4 @@ void deleteSpesifikParent(List_Parent &L, string X){
 void deallocateParent(address_parent &P){
     delete P;
 }
+
