@@ -27,7 +27,7 @@ address_parent createElmParent(infotypeParent in);
 
 void insertFirstParent(List_Parent &L, address_parent P);
 void insertAfterParent(List_Parent &L, address_parent Prec, address_parent P);
-void insertLastparent(List_Parent &L, address_parent P);
+void insertLastParent(List_Parent &L, address_parent P);
 
 void insertSortedParent(List_Parent &L, infotypeParent X);
 
