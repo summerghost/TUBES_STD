@@ -8,6 +8,7 @@ typedef struct Relasi* relateAddress;
 
 struct relasi {
 	//address parrent disini//
+	addressParent warteg;
 	addressChild mamin;
 	relateAddress next;
 	relateAddress prev;
