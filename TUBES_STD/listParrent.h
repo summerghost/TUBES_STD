@@ -1,3 +1,8 @@
+/* AKMAL MUHAMAD F. 1301190436
+   MUHAMAD SULTHON A. 1301194008
+   IF-43-05
+*/
+
 #include<iostream>
 #include<cstdlib>
 #include<crtime>
@@ -42,3 +47,4 @@ address_parent findElmParent(List_Parent &L, string X);
 void printInfoParent(List_Parent L);
 void deleteSpesifikParent(List_Parent &L, string X);
 void deallocateParent(address_parent &P);
+

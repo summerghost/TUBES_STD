@@ -1,3 +1,7 @@
+/* AKMAL MUHAMAD F. 1301190436
+   MUHAMAD SULTHON A. 1301194008
+   IF-43-05
+*/
 #include <iostream>>
 #include "listParent.h"
 
@@ -157,3 +161,4 @@ void deleteSpesifikParent(List_Parent &L, string X){
 void deallocateParent(address_parent &P){
     delete P;
 }
+

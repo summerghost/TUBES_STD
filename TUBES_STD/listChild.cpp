@@ -1,3 +1,8 @@
+/* AKMAL MUHAMAD F. 1301190436
+   MUHAMAD SULTHON A. 1301194008
+   IF-43-05
+*/
+
 #include "listChild.h"
 
 void createListChild(listChild& L) {
